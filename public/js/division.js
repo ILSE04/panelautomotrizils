@@ -1,6 +1,8 @@
-$(document).ready(function() {
-	
-	$(".header").load("./header.html");
-	$(".contenido").load("./contenido.html");
 
-});
+	$('.heade').css({
+		'overflow': 'hidden',
+		'height': '40%'
+		
+		});
+		$(".heade").load("./header.html");
+		$(".contenido").load("./contenido.html");
