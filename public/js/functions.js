@@ -71,7 +71,7 @@
 	}
 
 	/* ## Document Scroll - Window Scroll */
-	$( document ).on("scroll",function()
+	$( window ).on("scroll",function()
 	{
 		var scroll	=	$(window).scrollTop();
 		var height	=	$(window).height();
@@ -123,6 +123,17 @@
 			$(".header-section").removeClass("navbar-fixed-top");
 		} /* set sticky menu - end */
 		
+
+		/* Función de navegación */
+		
+		$('.navegar').on('click',function(envent){
+			envent.preventDefault();
+			let pagina = $(this).data('pagina');
+			console.log(pagina);
+			$('#contenido').load(pagina);
+		})
+		
+		/* FIN Función de navegación */
 		
 		$('.navbar-nav li a[href*="#"]:not([href="#"]), .site-logo a[href*="#"]:not([href="#"])').on("click", function(e) {
 	
@@ -397,6 +408,9 @@
 	
 	/* ## Window Load - Handler for load() called */	
 	$(window).on("load",function() {
+
+		console.log('Cargo de nuevo el programa');
+		
 		/* - Site Loader */
 		if ( !$("html").is(".ie6, .ie7, .ie8") ) {
 			$("#site-loader").delay(1000).fadeOut("slow");
