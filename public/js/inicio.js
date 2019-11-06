@@ -1,16 +1,19 @@
+console.log("hola");
 'use_strict';
 productos().then(r=>{
-    console.log('lista',r);   
-})
+    console.log('lista',r); 
 
-let html='';
+    let contador = 0;
+    let html='';
 	console.log('mi lista',r,Object.keys(r));
-	Object.keys(r).forEach(id=>{	
+	Object.keys(r).forEach(id=>{
+	contador++;	
 	console.log(id);
 
 	const url = window.location;
 	const info = r[id]; 
 
+	if (contador <=6) {
 	html+=`
 		<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
 		<img src="images/inventroy1.jpg" alt="Inventory" />
@@ -24,8 +27,13 @@ let html='';
 		</div>
 		</div>
 `;
+}
 
 	})
 
 	console.log(html);
+	$("#CargarAutos").html(html)  
+})
+
+
 

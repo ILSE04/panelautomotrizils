@@ -1,3 +1,4 @@
+console.log("archivo ruta");
 const rutas = {
     'detalles':{
         titulo  : 'Detalles del automovil',
@@ -32,6 +33,7 @@ function rutaActual(){
 $(document).ready(function(){
     $(".header").load('./header.html');
     const ruta = rutaActual();
+    console.log("hola",ruta);
     navegar(ruta[1]);   
 
     $(".footer").load('./footer.html');
