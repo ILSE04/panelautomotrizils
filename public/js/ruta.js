@@ -5,12 +5,17 @@ const rutas = {
     },
     'contacto':{
         titulo  : 'Detalles del automovil',
-        carga: 'contacto.html'
-    }
+        carga: 'contactus.html'
+    },
+
+    'servicio':{
+        titulo  : 'Detalles del automovil',
+        carga: 'services.html'
+    },
 }
 
 function navegar(ruta){
-    let load = './inicio.html'
+    let load = './contenido.html'
     if(ruta!=''&&ruta!=undefined)
         if( Object.keys( rutas ).includes(ruta) )
             load='./'+rutas[ruta].carga;
@@ -23,14 +28,11 @@ function navegar(ruta){
 function rutaActual(){
     return window.location.pathname.split('/');
 }
+
 $(document).ready(function(){
     $(".header").load('./header.html');
     const ruta = rutaActual();
-    navegar(ruta[1]);
-
-
-
-        
+    navegar(ruta[1]);   
 
     $(".footer").load('./footer.html');
 
