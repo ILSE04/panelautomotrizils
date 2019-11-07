@@ -31,7 +31,7 @@ productos().then(r=>{
 
 	})
 
-	//console.log(html);
+	console.log(html);
 	$("#CargarAutos").html(html)  
 
 	$(".navegar").click(function(event){
@@ -43,6 +43,3 @@ productos().then(r=>{
 	
 	});
 })
-
-
-
