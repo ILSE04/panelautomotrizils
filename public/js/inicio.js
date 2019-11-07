@@ -1,4 +1,3 @@
-console.log("hola");
 'use_strict';
 productos().then(r=>{
     console.log('lista',r); 
@@ -6,13 +5,14 @@ productos().then(r=>{
     let contador = 0;
     let html='';
 	console.log('mi lista',r,Object.keys(r));
+
 	Object.keys(r).forEach(id=>{
 	contador++;	
 	console.log(id);
 
-	const url = window.location;
+	//const url = window.location;
 	const info = r[id]; 
-
+	const url = 'detalles/'+info.id;
 	if (contador <=6) {
 	html+=`
 		<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
@@ -33,6 +33,15 @@ productos().then(r=>{
 
 	console.log(html);
 	$("#CargarAutos").html(html)  
+
+	$(".navegar").click(function(event){
+		//console.log("navegar");
+		
+	  event.preventDefault();
+	  let pagina = $(this).data('pagina');
+	  $('.contenido').load(pagina);
+	
+	});
 })
 
 

@@ -8,11 +8,10 @@ const rutas = {
         titulo  : 'Detalles del automovil',
         carga: 'contactus.html'
     },
-
     'servicio':{
         titulo  : 'Detalles del automovil',
-        carga: 'services.html'
-    },
+        carga: 'servicio.html'
+    }
 }
 
 function navegar(ruta){
@@ -23,7 +22,7 @@ function navegar(ruta){
         else
             load='./404.html';
     
-   // history.pushState({key:ruta}, '', ruta);
+   //history.pushState({key:ruta}, '', ruta);
     $(".contenido").load(load);
 }
 function rutaActual(){
@@ -31,7 +30,7 @@ function rutaActual(){
 }
 
 $(document).ready(function(){
-    $(".header").load('./header.html');
+    //$(".header").load('./header.html');
     const ruta = rutaActual();
     console.log("hola",ruta);
     navegar(ruta[1]);   

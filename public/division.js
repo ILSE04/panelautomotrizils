@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$("#contenido").load("./contenido.html");
+	$(".contenido").load("./contenido.html");
 	$(".footer").load("./footer.html");
 	
 	$('.navegar').on('click',function(envent){

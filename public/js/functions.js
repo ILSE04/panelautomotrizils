@@ -126,12 +126,12 @@
 
 		/* Función de navegación */
 		
-		$('.navegar').on('click',function(envent){
+		/* $('.navegar').on('click',function(envent){
 			envent.preventDefault();
 			let pagina = $(this).data('pagina');
 			console.log(pagina);
 			$('#contenido').load(pagina);
-		})
+		}) */
 		
 		/* FIN Función de navegación */
 		
