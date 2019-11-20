@@ -7,7 +7,7 @@
 				<div class="container">
 					<h3>inventory</h3>
 					<ol class="breadcrumb">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">inicio</a></li>
 						<li class="active">inventory single</li>
 					</ol>
 				</div><!-- Container /- -->
@@ -21,8 +21,10 @@
 				<!-- Row -->
 				<div class="row">
 					<div class="col-md-8 col-sm-8 col-xs-12 content-area">
-						<div class="inventory-slider">
-							<ul id="imageGallery"  class="gallery">
+						
+						<div class="inventory-slider" >
+							<ul id="imageGallery"  class="gallery" >
+
 								<li data-thumb="images/inventroy-single-thumb1.png">
 									<img src="images/inventroy-single1.png" alt="Inventory" />
 								</li>
@@ -37,6 +39,7 @@
 								</li>
 							</ul>
 						</div>
+
 						<div class="inventroy-content inventory-single">
 							<h3>aston martin db11</h3>
 							<div class="inv-box">
@@ -45,7 +48,9 @@
 								<span>automatic</span>
 								<span>22.1 MILAGE</span>
 							</div>
-							<h4>START FROM <b>$211,995</b><a href="#" title="VIEW DETAILS">VIEW DETAILS  <i class="fa fa-angle-double-right"></i></a></h4>
+							
+							<h4>START FROM:<b>$211,995</b>
+							<a href="#" title="VIEW DETAILS">VIEW DETAILS  <i class="fa fa-angle-double-right"></i></a></h4>
 						</div>
 						<div class="inventory-tabs">
 							<!-- Nav tabs -->
@@ -72,12 +77,12 @@
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-12 widget-area">
 						<aside class="widget widget_specifiaction">
-							<h3 class="widget-title">Specifications</h3>
+							<h3 class="widget-title">Especificaciones</h3>
 							<div class="specifications-content">
-								<p><span>Year:</span>2017</p>							
-								<p><span>Make:</span>Aston-Martin</p>
-								<p><span>Model:</span>DB11</p>
-								<p><span>Price:</span>$ 211995</p>
+								<p><span id="año">Año:</span>2017</p>							
+								<p><span id="marca">Marca:</span>Aston-Martin</p>
+								<p><span id="modelo">Modelo:</span>DB11</p>
+								<p><span id="precio">Precio:</span>$ 211995</p>
 								<p><span>Engine:</span>V12</p>
 								<p><span>Transmission:</span>8 - Speed ZF Automatic</p>
 								<p><span>Horsepower @ RPM:</span>600</p>
@@ -128,3 +133,5 @@
 			</div><!-- Container /- -->
 			
 		</main>
+
+		<script src="js/detalles.js"></script>

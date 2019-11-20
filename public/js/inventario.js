@@ -12,8 +12,8 @@ productos().then(r=>{
 
 	//const url = window.location;
 	const info = r[id]; 
-	const url = 'detalles/'+info.id;
-	if (contador <=6) {
+	const url = 'detalles/'+info.id;   
+	if (contador <=9) {
 	html+=`
 		<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
 		<img src="images/inventroy1.jpg" alt="Inventory" />
@@ -22,8 +22,9 @@ productos().then(r=>{
 			<span>2016</span>
 			<span>300hp</span>
 			<span>automatic</span>
+			<span>20.1 MILAGE</span>
 			<h4>START FROM <b>$`+info.priceTaxIncl+`</b></h4>
-			<a href="`+url+`" class="verDescripcion" title="Book now">book now</a> 
+			<a href="`+url+`" class="verDescripcion" title="Book now">book now</a>
 		</div>
 		</div>
 `;
@@ -31,8 +32,8 @@ productos().then(r=>{
 
 	})
 
-	//console.log(html);
-	$("#CargarAutos").html(html)  
+	console.log(html);
+	$("#CargarInventario").html(html)  
 
 	$(".navegar").click(function(event){
 		//console.log("navegar");
@@ -43,10 +44,10 @@ productos().then(r=>{
 	
 	});
 
-	// codigo 14 de nov lo acabao de agregar
+	// codigo 14 de nov lo acabao de agregar Tercer video
 	$('.verDescripcion').on('click',function(e){
-		e.preventDefault();
-		navegar('detalles');
+	e.preventDefault();
+	navegar('detalles');
 	
   	})
 	// codigo 14 de nov lo acabao de agregar

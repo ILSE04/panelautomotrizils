@@ -23,7 +23,7 @@ productos().then(r=>{
 			<span>300hp</span>
 			<span>automatic</span>
 			<h4>START FROM <b>$`+info.priceTaxIncl+`</b></h4>
-			<a href="`+url+`" title="Book now">book now</a>
+			<a href="`+url+`" class="verDescripcion" title="Book now">book now</a> 
 		</div>
 		</div>
 `;
@@ -31,7 +31,7 @@ productos().then(r=>{
 
 	})
 
-	console.log(html);
+	//console.log(html);
 	$("#CargarAutos").html(html)  
 
 	$(".navegar").click(function(event){
@@ -42,4 +42,12 @@ productos().then(r=>{
 	  $('.contenido').load(pagina);
 	
 	});
+
+	// codigo 14 de nov lo acabao de agregar
+	$('.verDescripcion').on('click',function(e){
+		e.preventDefault();
+		navegar('detalles');
+	
+  	})
+	// codigo 14 de nov lo acabao de agregar
 })
