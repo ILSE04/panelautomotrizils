@@ -65,9 +65,9 @@ function verProducto(id) {
     return new Promise((res,rej)=>{
         
         let productos =  localStorage.getItem('productos');
-        productos = (productos!=undefined)?JSON.parse(productos):{};
-        const r = productos.find(f=>{ return f.id=== id })
-        console.log(id,productos,r);
+        productos = (productos!=undefined)?JSON.parse(productos):{};        
+        //const r = (typeof productos )?productos.find(f=>{ return f.id=== id }):null;
+        const r = productos[id];
             if(r!=undefined)
                 res( r);
             else
