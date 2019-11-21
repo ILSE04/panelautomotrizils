@@ -41,25 +41,37 @@ function productos(d={}) {
 function producto(id) {
     /*
      producto(id)
-    */
+    */   
     return new Promise((res,rej)=>{
         $(document).ready(function(){
-            let productos = localStorage.getItem('productos');            
-            if(productos==undefined)
-               productos()
-            else
-                res( verProducto(id) );
+            let productos = localStorage.getItem('productos');         
+           // console.log(id,productos);   
+            if(productos==undefined){
+               productos().then(r=>{
+                res(r)
+               }).catch(err=>{
+                   console.error(err);                   
+               })
+           } else{
+               verProducto(id).then(r=>{
+                    res(r)
+                }).catch(err=>{
+                    console.error(err);                    
+                })}
         })  
     })     
 }
 function verProducto(id) {
     return new Promise((res,rej)=>{
-            let productos =  localStorage.getItem('productos');
-            productos = (productos!=undefined)?JSON.parse(productos):{};
-            if(productos[id]!=undefined)
-                res( productos[id]);
+        
+        let productos =  localStorage.getItem('productos');
+        productos = (productos!=undefined)?JSON.parse(productos):{};
+        const r = productos.find(f=>{ return f.id=== id })
+        console.log(id,productos,r);
+            if(r!=undefined)
+                res( r);
             else
-                rej
+                rej({error:'no se encontró el registro'});
     })     
 }
 

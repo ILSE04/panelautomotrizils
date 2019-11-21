@@ -2,9 +2,9 @@
 console.log("archivoDetalles.js");
 $(document).ready(function() {
 	
-	if (rutaActual()[2]!=''&&rutaActual()[2]!=undefined){
-		producto(rutaActual()[2]).then(r=>{
-			console.log(r);
+	if (rutaActual()[1]!=''&&rutaActual()[2]!=undefined){
+		producto(rutaActual()[2]).then(detallesAuto=>{
+			console.log('detallesAuto', detallesAuto);
 
 			/*let html='';
 
@@ -24,5 +24,5 @@ $(document).ready(function() {
 		navegar('inicio');
 	}
 
-	console.log(rutaActual()[2]);
+	console.log('adsas',rutaActual());
 })

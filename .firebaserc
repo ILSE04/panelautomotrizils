@@ -2,6 +2,7 @@
   "projects": {
     "default": "panelautomotriz-i",
     "jc": "panelautomotriz-j",
-    "ilse": "holamundo-a0c04"
+    "ilse": "holamundo-a0c04",
+    "test": "test2-74418"
   }
 }
