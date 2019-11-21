@@ -44,11 +44,11 @@ productos().then(r=>{
 	
 	});
 
-	// codigo 14 de nov lo acabao de agregar Tercer video
+
 	$('.verDescripcion').on('click',function(e){
 	e.preventDefault();
 	navegar('detalles');
 	
   	})
-	// codigo 14 de nov lo acabao de agregar
+	
 })

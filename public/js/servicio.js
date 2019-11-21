@@ -43,11 +43,11 @@ productos().then(r=>{
 	
 	});
 
-	// codigo 14 de nov lo acabao de agregar
+	
 	$('.verDescripcion').on('click',function(e){
 		e.preventDefault();
 		navegar('detalles');
 	
   	})
-	// codigo 14 de nov lo acabao de agregar
+	
 })

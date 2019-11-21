@@ -1,6 +1,6 @@
 'use strict';
 console.log("archivoDetalles.js");
-.$(document).ready(function() {
+$(document).ready(function() {
 	
 	if (rutaActual()[2]!=''&&rutaActual()[2]!=undefined){
 		producto(rutaActual()[2]).then(r=>{
