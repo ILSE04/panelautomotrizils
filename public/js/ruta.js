@@ -4,14 +4,24 @@ const rutas = {
         titulo  : 'Detalles del automovil',
         carga: 'detalles.html'
     },
-    'contacto':{
+    'contacto':{    
         titulo  : 'Detalles del automovil',
         carga: 'contactus.html'
     },
     'servicio':{
         titulo  : 'Detalles del automovil',
         carga: 'servicio.html'
-    }
+    },
+    
+    'inventario':{
+        titulo  : 'Detalles de automovil',
+        carga: 'inventory.html'
+    },
+    'acerca-de':{
+        titulo  : 'Detalles de automovil',
+        carga: 'about.html'
+    },
+    
 }
 
 function navegar(ruta){
