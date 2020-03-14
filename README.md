@@ -27,17 +27,24 @@
 - La linea 114 a la 131 Se hace una petición a la url (la url no se le puede cambiar por que facebook la tiene predefinida), se le define el token.
 - La linea 133 a la 135 Esa funcion regresa true o false dependindo si se encuetra la palabra dentro de la sentencia.
 
+![1Nodexpress](https://user-images.githubusercontent.com/52976520/76582132-06804700-649b-11ea-97c1-e14bdcd92032.png)
+![index1](https://user-images.githubusercontent.com/52976520/76675858-a5806e00-6583-11ea-83a6-7747f77d280a.JPG)
+![index2](https://user-images.githubusercontent.com/52976520/76675880-cf399500-6583-11ea-9cc8-d55ca8b2f3c7.JPG)
+![index3](https://user-images.githubusercontent.com/52976520/76675894-eed0bd80-6583-11ea-8150-7852ebb8a667.JPG)
+![index4](https://user-images.githubusercontent.com/52976520/76675904-0019ca00-6584-11ea-9ead-574233844ea6.JPG)
+
+
 # Ejecución de Ngrok
 Es una herramienta que permite acceder nustro servidor local a cualquier persona en internet con la que compartamos una URL generada dinamicamente.
 Se hace la descarga de ngrok dentro de su proyecto para que te de la url, se ejecuta con *ngrok http 3000* y dependiendo de que puerto se está ejecutando el servidor se le agrega a lado de http, en este caso yo tengo el puerto *3000* la aplicación solo nos sirve para el desarrollo, en caso de que se detenga y si la va a volver a ejecutar de manda otra url, no es recomendable que se detenga.
+![5Ngrok](https://user-images.githubusercontent.com/52976520/76582803-e9e50e80-649c-11ea-89fd-30ae48df9f91.png)
 
 
 
-![1Nodexpress](https://user-images.githubusercontent.com/52976520/76582132-06804700-649b-11ea-97c1-e14bdcd92032.png)
+
 ![2FanPage](https://user-images.githubusercontent.com/52976520/76582355-9faf5d80-649b-11ea-88ab-ab963c966d48.JPG)
 ![3Webhook](https://user-images.githubusercontent.com/52976520/76582584-48f65380-649c-11ea-97e7-e98e77afa30b.png)
 ![4Token](https://user-images.githubusercontent.com/52976520/76582631-78a55b80-649c-11ea-90c1-0d27de80e4b2.png)
-![5Ngrok](https://user-images.githubusercontent.com/52976520/76582803-e9e50e80-649c-11ea-89fd-30ae48df9f91.png)
 ![6Resultado](https://user-images.githubusercontent.com/52976520/76582829-084b0a00-649d-11ea-960b-4dd34f30f68f.png)
 
 
