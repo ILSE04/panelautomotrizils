@@ -33,6 +33,12 @@
 ![index3](https://user-images.githubusercontent.com/52976520/76675894-eed0bd80-6583-11ea-8150-7852ebb8a667.JPG)
 ![index4](https://user-images.githubusercontent.com/52976520/76675904-0019ca00-6584-11ea-9ead-574233844ea6.JPG)
 
+- FanPage
+![2FanPage](https://user-images.githubusercontent.com/52976520/76582355-9faf5d80-649b-11ea-88ab-ab963c966d48.JPG)
+- Obtención de Webhook y Token
+![3Webhook](https://user-images.githubusercontent.com/52976520/76582584-48f65380-649c-11ea-97e7-e98e77afa30b.png)
+![4Token](https://user-images.githubusercontent.com/52976520/76582631-78a55b80-649c-11ea-90c1-0d27de80e4b2.png)
+
 
 # Ejecución de Ngrok
 Es una herramienta que permite acceder nustro servidor local a cualquier persona en internet con la que compartamos una URL generada dinamicamente.
@@ -40,11 +46,7 @@ Se hace la descarga de ngrok dentro de su proyecto para que te de la url, se eje
 ![5Ngrok](https://user-images.githubusercontent.com/52976520/76582803-e9e50e80-649c-11ea-89fd-30ae48df9f91.png)
 
 
-
-
-![2FanPage](https://user-images.githubusercontent.com/52976520/76582355-9faf5d80-649b-11ea-88ab-ab963c966d48.JPG)
-![3Webhook](https://user-images.githubusercontent.com/52976520/76582584-48f65380-649c-11ea-97e7-e98e77afa30b.png)
-![4Token](https://user-images.githubusercontent.com/52976520/76582631-78a55b80-649c-11ea-90c1-0d27de80e4b2.png)
+# Resultado
 ![6Resultado](https://user-images.githubusercontent.com/52976520/76582829-084b0a00-649d-11ea-960b-4dd34f30f68f.png)
 
 
